@@ -36,7 +36,7 @@ endef
 define Package/tang/install
 	$(INSTALL_DIR)	$(1)/usr/libexec
 	$(INSTALL_DIR)	$(1)/etc/xinetd.d/
-	$(INSTALL_BIN)	$(PKG_INSTALL_DIR)/usr/libexec/tangd*	$(1)/usr/libexec/
+	$(INSTALL_BIN)	$(PKG_INSTALL_DIR)/usr/lib/tangd*	$(1)/usr/libexec/
 	$(INSTALL_BIN)	./files/tangdw				$(1)/usr/libexec/
 	$(CP)		./files/tangdx				$(1)/etc/xinetd.d/
 endef
